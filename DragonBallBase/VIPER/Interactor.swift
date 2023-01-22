@@ -22,7 +22,7 @@ class HeroInteractor: AnyInteractor {
     var presenter: AnyPresenter?
     
     func getHeroes() {
-        let myToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InByaXZhdGUifQ.eyJleHBpcmF0aW9uIjo2NDA5MjIxMTIwMCwiZW1haWwiOiJ2ZXJzZXJwZXJAaG90bWFpbC5jb20iLCJpZGVudGlmeSI6IjdENjY1Njk0LTQxMzItNEIzOC1CRkVCLTRCRTU1QUY4MzRDMyJ9.cFZddJj9LrdKylWE5tw3dSjaSvCa5DomqCcu7W6IZcs"
+        let myToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6InByaXZhdGUifQ.eyJpZGVudGlmeSI6IjdENjY1Njk0LTQxMzItNEIzOC1CRkVCLTRCRTU1QUY4MzRDMyIsImVtYWlsIjoidmVyc2VycGVyQGhvdG1haWwuY29tIiwiZXhwaXJhdGlvbiI6NjQwOTIyMTEyMDB9.WrC2Gtv1XuQTqOhAjD50PLklpDUUBYsVnk7UsozazpM"
  
         ApiClient(token: myToken).getHeroes { [weak self] heroes, error in
             if (error != nil) {
